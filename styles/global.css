@@ -1,4 +1,10 @@
-:rot {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
   --red: #E3646E;
   --purple: #BB72E9;
   --blue: #3996DB;

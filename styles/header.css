@@ -1,0 +1,79 @@
+@import url(global.css);
+
+.header {
+  height: 750px;
+  background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+
+  #icon-perfil {
+    position: absolute;
+    z-index: 2;
+    margin-left: 80px;
+    margin-bottom: 10px;
+  }
+
+  #img-perfil {
+    width: 90px;
+    border-radius: 100px;
+  }
+}
+
+.border-perfil {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/images/Border.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 112px;
+  height: 112px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  h1 {
+    color: var(--gray-600);
+    font: var(--title-lg);
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: var(--gray-500);
+    font: var(--subtitle);
+  }
+
+  strong {
+    color: var(--red);
+  }
+
+  p {
+    color: var(--gray-400);
+    font: var(--text-sm);
+    text-align: center;
+  }
+}
+
+.tec-experiences {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tec-background {
+  display: flex;
+  align-items: center;
+}
