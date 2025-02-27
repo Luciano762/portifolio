@@ -1,15 +1,18 @@
 @import url(global.css);
-
 .header {
-  height: 750px;
   background-image: url(../assets/images/Background_Intro.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .perfil {
   display: flex;
-  justify-content: center;
   align-items: end;
   position: relative;
 
@@ -43,17 +46,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 56px;
 
   h1 {
     color: var(--gray-600);
     font: var(--title-lg);
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   span {
     color: var(--gray-500);
     font: var(--subtitle);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--gray-500);
+    font-size: 1.2rem;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blinkCursor 0.6s infinite;
   }
 
   strong {
@@ -70,10 +81,90 @@
 .tec-experiences {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  gap: 16px;
+  margin-top: 80px;
 }
 
 .tec-background {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: auto;
+  height: 40px;
+  border-radius: 9999px;
+  gap: 8px;
+  background-color: var(--gray-300);
+  font: var(--text-md);
+  color: var(--gray-500);
+  transition: all 0.3s ease-in-out;
+
+  
+  #git {
+    width: 24px;
+    height: 24px;
+  }
+
+  #html {
+    width: 24px;
+    height: 24px;
+    filter: invert(54%) sepia(35%) saturate(1335%) hue-rotate(311deg) brightness(93%) contrast(91%);
+  } 
+  
+  #css {
+    width: 24px;
+    height: 24px;
+    filter: invert(74%) sepia(73%) saturate(4154%) hue-rotate(179deg) brightness(99%) contrast(95%);
+  }
+
+  #javascript {
+    width: 24px;
+    height: 24px;
+    filter: invert(0.08) sepia(0.39) saturate(700%) hue-rotate(10deg) brightness(0.85) contrast(1.20);
+
+  }
+
+  #react {
+    width: 24px;
+    height: 24px;
+    filter: invert(74%) sepia(73%) saturate(4154%) hue-rotate(179deg) brightness(99%) contrast(95%);
+  }
+  #node {
+    width: 24px;
+    height: 24px;
+    filter: invert(75%) sepia(16%) saturate(1498%) hue-rotate(48deg) brightness(100%) contrast(78%);
+  }
+}
+
+.tec-background:hover {
+  background-color: var(--gray-100);
+  border: var(--red) 1px solid;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.icon-seta {
+  margin-top: 94px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-seta:hover {
+  transform: translateY(10px);
+  cursor: pointer;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 74%;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
 }
