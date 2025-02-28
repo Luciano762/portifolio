@@ -89,6 +89,17 @@
   }
 }
 
+.tec-experiences-two {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .tec-background {
   display: flex;
   align-items: center;

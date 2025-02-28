@@ -32,3 +32,60 @@
   }
 
 }
+
+.social-media {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+}
+
+.social-media > div {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-300);
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media > div:hover {
+  background-color: var(--gray-100);
+  border: var(--blue) 1px solid;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  #arrow {
+    filter: invert(56%) sepia(25%) saturate(2077%) hue-rotate(178deg) brightness(90%) contrast(90%);
+  }
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.social-media img {
+  width: 28px;
+  height: 28px;
+  filter: invert(58%) sepia(13%) saturate(422%) hue-rotate(186deg) brightness(95%) contrast(84%);
+}
+
+.social-media p {
+  flex-grow: 1;
+  color: var(--gray-500);
+  font: var(--text-md);
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#arrow {
+  width: 20px;
+  height: 20px;
+}
