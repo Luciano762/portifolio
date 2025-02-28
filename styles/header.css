@@ -83,6 +83,10 @@
   justify-content: center;
   gap: 16px;
   margin-top: 80px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .tec-background {
